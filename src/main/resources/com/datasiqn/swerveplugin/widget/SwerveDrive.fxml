@@ -1,0 +1,26 @@
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.layout.Pane?>
+<StackPane xmlns:fx="https://javafx.com/fxml/1"
+           fx:controller="com.datasiqn.swerveplugin.widget.SwerveDriveWidget"
+           fx:id="root"
+           minWidth="512"
+           minHeight="512">
+    <StackPane fx:id="drivetrain">
+        <Polygon fx:id="shape" style="-fx-fill: -swatch-gray; -fx-stroke: -fx-text-base-color" />
+
+        <Polygon fx:id="facingArrow" style="-fx-fill: -swatch-400" points="
+            -14, -30,
+            0, -50,
+            14, -30,
+            4, -30,
+            4, 0,
+            -4, 0,
+            -4, -30
+        " />
+
+        <Pane fx:id="velocityArrow" maxWidth="0" maxHeight="0" />
+
+        <StackPane fx:id="modules" />
+    </StackPane>
+</StackPane>
