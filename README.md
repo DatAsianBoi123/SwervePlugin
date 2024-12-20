@@ -34,7 +34,7 @@ Properties are as follows:
 
 | Name            | Type       | Description                                                                                                                                                                                       |
 |-----------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| moduleLocations | `double[]` | Module Locations<br/>These are in the format of `[x₀, y₀, ··· , xₙ, yₙ]`                                                                                                                          |
+| moduleLocations | `double[]` | Module Locations<br/>These are in the format of `[x₀, y₀, ··· , xₙ, yₙ]`. These should be in the order around the perimeter of the robot (no jumping diagonally across the drivetrain).            |
 | moduleSpeeds    | `double[]` | Module Speeds<br/>These are in the format of `[v₀, θ₀, ··· , vₙ, θₙ]` where `v` is velocity and `θ` is angle of the wheel in radians where 0 is facing "forward" (CCW+).                          |
 | heading         | `double`   | Robot Heading<br/>This is the robot's heading in radians where 0 is facing "forward" (CCW+).                                                                                                      |
 | xVelocity       | `double`   | Chassis X Velocity<br/>X velocity of the robot. Positive means in the "forward" direction. This should be in the same units as the velocity in `moduleSpeeds`.                                    |
